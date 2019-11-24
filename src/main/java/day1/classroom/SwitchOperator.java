@@ -26,17 +26,28 @@ public class SwitchOperator {
 		// Declare 2 integer numbers
 		int a=2;
 		int b=3;
+		int c=0;
 		
 		// Declare a String variable with input as operations (Tip:
-		String operations;
+		String operations="add";
 		
-		
-
 		// Initiate switch case for operations
 		switch (operations) {
-		case :
-			
+		case "add":
+			c=a+b;
+			System.out.println(c);
 			break;
+		case "sub":
+			c=a-b;
+			System.out.println(c);
+		case "mul":
+			c=a*b;
+			System.out.println(c);
+		case "div":
+			c=a/b;
+			System.out.println(c);
+			
+		
 
 		default:
 			break;
