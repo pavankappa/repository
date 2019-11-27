@@ -23,25 +23,30 @@ public class PrimeNumber {
 	public static void main(String[] args) {
 
 		// Declare an int Input and assign a value
-		int n=13;
+		int input = 13;
 		// Declare a boolean input as flag
-		boolean flag;
+		boolean flag=false;
 		// Iterate from 1 to half of the input
+		for (int i = 0; i < input/2; i++) {
 		
 			// Divide the input with each for loop variable and check the remainder
-			//if(n)
+			int rem=input%2;
 				// Set the flag as true when there is no remainder
-				
+				if (rem==0) {
+					flag=true;
 				// break the iterator
-				
-		// Check the flag (Provide a condition)
+					break;
+				}
+		}		
 		
+				// Check the flag (Provide a condition)
+				if(flag==false) {
+					System.out.println("prime number");
+				}
 			// Print 'Prime' when the condition matches
 			
 			// Print 'Not a Prime' when the condition doesn't match 
-			
 		
-
 	}
 
 }
