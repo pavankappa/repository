@@ -22,19 +22,23 @@ public class FibonacciSeries {
 	public static void main(String[] args) {
 		
 		// initialize 3 int variables (Tip: range & firstNum, secNum in the series)
-		
+		int range = 8;
+		int firstNum=0;
+		int secNum=1;
 		// Iterate from 1 to the range
+		for (int i = 0; i < range; i++) {
 		
 			// Print first number 
-			
+			System.out.println(firstNum);
 			// add first and second number
-			
-			// Assign second nuumber to the first number
-			
+			int sum = firstNum+secNum;
+			// Assign second number to the first number
+			firstNum=secNum;
 			// Assign sum to the second number
+			secNum=sum;
 			
+		}	
 		
-
 	}
 
 }
