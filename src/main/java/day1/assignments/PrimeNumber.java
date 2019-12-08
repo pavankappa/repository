@@ -21,11 +21,34 @@ public class ArmstrongNumber {
 	 */
 	
 	public static void main(String[] args) {
+<<<<<<< HEAD
+=======
+
+		// Declare an int Input and assign a value
+		int input = 13;
+		// Declare a boolean input as flag
+		boolean flag=false;
+		// Iterate from 1 to half of the input
+		for (int i = 0; i < input/2; i++) {
+>>>>>>> branch 'master' of https://github.com/pavankappa/repository
 		
+<<<<<<< HEAD
 		// Declare your input
 		int n=153;
 		int mul=1;
+=======
+			// Divide the input with each for loop variable and check the remainder
+			int rem=input%2;
+				// Set the flag as true when there is no remainder
+				if (rem==0) {
+					flag=true;
+				// break the iterator
+					break;
+				}
+		}		
+>>>>>>> branch 'master' of https://github.com/pavankappa/repository
 		
+<<<<<<< HEAD
 		// Declare 3 more int variables as calculated, remainder, original (Tip: Initialize calculated alone)
 		int calculated=0;
 		int r;
@@ -51,7 +74,15 @@ public class ArmstrongNumber {
 		
 		// Check whether calculated and original are same
 		if(calculated==org){
+=======
+				// Check the flag (Provide a condition)
+				if(flag==false) {
+					System.out.println("prime number");
+				}
+			// Print 'Prime' when the condition matches
+>>>>>>> branch 'master' of https://github.com/pavankappa/repository
 			
+<<<<<<< HEAD
 			//When it matches print it as Armstrong number
 			System.out.println("Given input is Armstrong Number"+calculated);
 			
@@ -66,8 +97,10 @@ public class ArmstrongNumber {
 		
 		
 		
+=======
+			// Print 'Not a Prime' when the condition doesn't match 
+>>>>>>> branch 'master' of https://github.com/pavankappa/repository
 		
-
 	}
 
 	}
