@@ -32,6 +32,7 @@ public class ArmstrongNumber {
 		
 		// Assign input into variable original 
 		int org=153;
+		//sample
 		
 		// Use loop to calculate: which loop to use until the number greater than 0??
 		while(n>0)
