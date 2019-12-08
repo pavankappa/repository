@@ -47,9 +47,7 @@ public class SwitchOperator {
 			c=a/b;
 			System.out.println(c);
 			
-		
-
-		default:
+		default: System.out.println("invalid operations");
 			break;
 		}
 		
