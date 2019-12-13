@@ -1,4 +1,4 @@
-package collections;
+package week3.assignments;
 
 import java.util.ArrayList;
 import java.util.Collections;
