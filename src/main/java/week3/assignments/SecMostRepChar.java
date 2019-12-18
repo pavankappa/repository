@@ -1,7 +1,12 @@
 package week3.assignments;
 
+import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.TreeSet;
 
 public class SecMostRepChar {
 
@@ -20,7 +25,21 @@ public class SecMostRepChar {
 				map.put(eachChar, 1);
 			}
 		}
-		System.out.println(map);
+		//System.out.println(map);
+		Set<Entry<Character, Integer>> entrySet = map.entrySet();
+		Set<Integer> count = new TreeSet<>();
+		
+		for (Entry<Character, Integer> eachEntry : entrySet) {
+			Integer value = eachEntry.getValue();
+			count.add(value);
+		}
+		System.out.println(count);
+		List<Integer> listCout = new ArrayList<>(count);
+		
+		for(Entry<Character, Integer> enty = entrySet)
+		{
+			//if(entry.getValue() = Listcount
+		}
 	}
 
 }
