@@ -21,7 +21,6 @@ public class FibonacciSeries {
 	
 	public static void main(String[] args) {
 		// initialize 3 int variables (Tip: range & firstNum, secNum in the series)
-<<<<<<< HEAD
 				int range = 8;
 				int firstNum=0;
 				int secNum=1;
@@ -36,29 +35,9 @@ public class FibonacciSeries {
 					firstNum=secNum;
 					// Assign sum to the second number
 					secNum=sum;
-=======
-		int range = 8;
-		int firstNum=0;
-		int secNum=1;
-		// Iterate from 1 to the range
-		for (int i = 0; i < range; i++) {
-		
-			// Print first number 
-			System.out.println(firstNum);
-			// add first and second number
-			int sum = firstNum+secNum;
-			// Assign second number to the first number
-			firstNum=secNum;
-			// Assign sum to the second number
-			secNum=sum;
->>>>>>> branch 'master' of https://github.com/pavankappa/repository
-			
-		}	
-		
-<<<<<<< HEAD
-		}
-=======
->>>>>>> branch 'master' of https://github.com/pavankappa/repository
+
+
 	}
 
+	}
 }
