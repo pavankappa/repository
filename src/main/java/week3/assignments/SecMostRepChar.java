@@ -36,7 +36,7 @@ public class SecMostRepChar {
 		System.out.println(count);
 		List<Integer> listCout = new ArrayList<>(count);
 		
-		for(Entry<Character, Integer> enty = entrySet)
+		//for(Entry<Character, Integer> enty = entrySet)
 		{
 			//if(entry.getValue() = Listcount
 		}

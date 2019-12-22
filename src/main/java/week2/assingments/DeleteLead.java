@@ -48,9 +48,12 @@ public class DeleteLead {
 	String leadId = driver.findElementByXPath("//div[@class='x-grid3-cell-inner x-grid3-col-partyId']").getText();
 	System.out.println(leadId);
 	
-	//Click First Resulting lead
-	driver.findElementByXPath("//a[contains(text(),'+leadId+')]").click();
+	Thread.sleep(2000);
 	
+	//Click First Resulting lead
+	driver.findElementByXPath("//a[contains(text(),'"+leadId+"')]").click();
+	
+	Thread.sleep(1000);
 	// Click Delete
 	driver.findElementByXPath("//a[@class='subMenuButtonDangerous']").click();
 	
