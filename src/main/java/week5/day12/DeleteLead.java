@@ -1,25 +1,21 @@
 package week5.day12;
 
-import java.util.concurrent.TimeUnit;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
-import org.openqa.selenium.chrome.ChromeDriver;
+public class DeleteLead extends ProjectSpecificMethods {
+	@BeforeTest
+	public void fileName()
+	{
+		excelFilename = "editLead";
+	}
 
-public class DeleteLead {
+	@Test(dataProvider = "getData")
+	public void runDeleteLead(String pNum) throws InterruptedException {
 
-	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
-		ChromeDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.get("http://leaftaps.com/opentaps/");
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		driver.findElementById("username").sendKeys("DemoSalesManager");
-		driver.findElementById("password").sendKeys("crmsfa");
-		driver.findElementByClassName("decorativeSubmit").click();
-		driver.findElementByLinkText("CRM/SFA").click();
-		driver.findElementByLinkText("Leads").click();
 		driver.findElementByLinkText("Find Leads").click();
 		driver.findElementByXPath("//span[text()='Phone']").click();
-		driver.findElementByXPath("//input[@name='phoneNumber']").sendKeys("99");
+		driver.findElementByXPath("//input[@name='phoneNumber']").sendKeys(pNum);
 		driver.findElementByXPath("//button[text()='Find Leads']").click();
 		Thread.sleep(2000);
 		String leadID = driver.findElementByXPath("//div[@class='x-grid3-cell-inner x-grid3-col-partyId']/a").getText();
@@ -34,7 +30,6 @@ public class DeleteLead {
 		} else {
 			System.out.println("Text not matched");
 		}
-		driver.close();
 }
 }
 

@@ -10,9 +10,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ReadExcel {
 	
 
-	public String[][] readExcel() throws IOException {
+	public String[][] readExcel(String excelFilename) throws IOException {
 		@SuppressWarnings("resource")
-		XSSFWorkbook wbook = new XSSFWorkbook("./data/createLead.xlsx");
+		XSSFWorkbook wbook = new XSSFWorkbook("./data/"+excelFilename+".xlsx");
 		XSSFSheet wsheet = wbook.getSheetAt(0);
 	    int rowCount = wsheet.getLastRowNum();
 	    // System.out.println(rowCount);
