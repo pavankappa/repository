@@ -18,6 +18,7 @@ public class CreateLead extends ProjectSpecificMethods{
 		driver.findElementById("createLeadForm_firstName").sendKeys(fName);
 		driver.findElementById("createLeadForm_lastName").sendKeys(fName);
 		driver.findElementByName("submitButton").click();
+		
 
 	}
 }
